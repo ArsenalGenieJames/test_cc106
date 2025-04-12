@@ -1,0 +1,9 @@
+function discountnumber(originalPrice, discountRate) {
+    let discountAmount = originalPrice * discountRate;
+    let finalPrice = originalPrice - discountAmount;
+    return finalPrice;
+}
+let userInput = prompt("Enter the Original Price:");
+let originalPrice = parseFloat(userInput);
+let discountRate = 0.1;
+console.log("Discounted Price: ", discountnumber(originalPrice, discountRate));
